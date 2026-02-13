@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FrostBox – Impressum & Datenschutzerklärung</title>
+
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -13,141 +14,170 @@
       line-height: 1.6;
       color: #111;
     }
+
     header {
-      margin-bottom: 28px;
+      margin-bottom: 30px;
     }
-    .badge {
-      display: inline-block;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: #f2f2f2;
-      font-size: 13px;
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 35px;
+      font-size: 20px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .card {
+      background: #fafafa;
+      border: 1px solid #eaeaea;
+      border-radius: 14px;
+      padding: 20px;
       margin-top: 10px;
     }
-    h1 { font-size: 28px; margin: 0 0 10px; }
-    h2 { font-size: 20px; margin-top: 34px; }
-    h3 { font-size: 16px; margin-top: 22px; }
-    code { background: #f6f6f6; padding: 2px 6px; border-radius: 6px; }
-    .box {
-      background: #fafafa;
-      border: 1px solid #eee;
-      border-radius: 14px;
-      padding: 14px 16px;
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
     }
-    a { color: inherit; }
-    footer { margin-top: 40px; font-size: 13px; color: #444; }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #555;
+    }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>FrostBox – Impressum & Datenschutzerklärung</h1>
-    <div class="badge">Stand: [[13.02.2026]]</div>
-  </header>
 
-  <section id="impressum">
-    <h2>Impressum</h2>
-    <div class="box">
-      <p><strong>Anbieter / Verantwortliche Person</strong><br />
-        [[Jens Kühne]]<br />
-        [[STRASSE NR]]<br />
-        [[PLZ ORT]]<br />
-        [[SCHWEIZ]]<br />
-        E-Mail: <a href="mailto:[[jennech@mac.com]]">[[EMAIL]]</a><br />
-      </p>
-      <p>
-        <strong>Hinweis</strong><br />
-        Diese Angaben gelten auch als Kontaktstelle für Datenschutzanfragen.
-      </p>
-    </div>
-  </section>
+<header>
+  <h1>FrostBox</h1>
+  <p><strong>Impressum & Datenschutzerklärung</strong></p>
+  <p>Stand: Februar 2026</p>
+</header>
 
-  <section id="datenschutz">
-    <h2>Datenschutzerklärung</h2>
 
-    <h3>1. Allgemeines</h3>
+<!-- IMPRESSUM -->
+<section>
+  <h2>Impressum</h2>
+
+  <div class="card">
+    <p><strong>Verantwortlich für den Inhalt:</strong></p>
+
     <p>
-      Der Schutz Ihrer Daten ist wichtig. Diese App verarbeitet personenbezogene Daten im Rahmen des Schweizer
-      Datenschutzgesetzes (DSG) sowie – sofern anwendbar – der Datenschutz-Grundverordnung (DSGVO).
+      Jens Kühne<br>
+      Rigistrasse 94<br>
+      4054 Basel<br>
+      Schweiz
     </p>
 
-    <h3>2. Welche Daten die App verarbeitet</h3>
-    <p>Je nach Nutzung können folgende Daten verarbeitet bzw. gespeichert werden:</p>
-    <ul>
-      <li>Inventar- und Produktdaten, die Sie selbst erfassen (z.B. Name, Menge, Notizen)</li>
-      <li>Selbst erstellte Produktfotos</li>
-      <li>App-Einstellungen</li>
-    </ul>
     <p>
-      Es werden <strong>keine Benutzerkonten</strong> erstellt und <strong>keine E-Mail-Adressen</strong> der Nutzer innerhalb der App erfasst.
+      E-Mail: 
+      <a href="mailto:jennech@mac.com">jennech@mac.com</a>
     </p>
+  </div>
+</section>
 
-    <h3>3. Speicherung in iCloud (CloudKit)</h3>
-    <p>
-      Die von Ihnen erfassten Daten werden in Ihrem persönlichen iCloud-Konto gespeichert (Apple CloudKit).
-      Der Entwickler hat <strong>keinen Zugriff</strong> auf diese Inhalte.
-    </p>
 
-    <h3>4. Kamera, Barcode-Scan und Fotos</h3>
-    <p>
-      Die App verwendet die Kamera ausschliesslich für:
-    </p>
-    <ul>
-      <li>Barcode-Scan (EAN/UPC), um Produktinformationen abzurufen</li>
-      <li>Optional: Fotografieren von Produkten zur eigenen Übersicht</li>
-    </ul>
-    <p>
-      Fotos werden nur auf Ihrem Gerät verarbeitet und – falls Sie es nutzen – zusammen mit den App-Daten in Ihrer iCloud gespeichert.
-    </p>
+<!-- DATENSCHUTZ -->
+<section>
+  <h2>Datenschutzerklärung</h2>
 
-    <h3>5. Abruf von Produktinformationen über Open Food Facts</h3>
-    <p>
-      Beim Barcode-Scan kann die App Produktinformationen aus der öffentlichen Datenbank
-      <strong>Open Food Facts</strong> abrufen. Dabei wird technisch eine Anfrage an deren Server gesendet.
-      Wie bei jeder Webanfrage kann dies die IP-Adresse Ihres Geräts beinhalten (technisch erforderlich, um die Antwort zu liefern).
-    </p>
-    <p>
-      Datenschutz-Informationen von Open Food Facts finden Sie hier:
-      <a href="https://wiki.openfoodfacts.org/Project:Privacy_policy" rel="noopener noreferrer" target="_blank">
-        https://wiki.openfoodfacts.org/Project:Privacy_policy
-      </a>
-    </p>
+  <h3>1. Allgemeines</h3>
+  <p>
+    Der Schutz Ihrer personenbezogenen Daten ist uns wichtig. 
+    Diese App verarbeitet personenbezogene Daten ausschliesslich im Rahmen des 
+    Schweizer Datenschutzgesetzes (DSG) sowie – sofern anwendbar – der 
+    Datenschutz-Grundverordnung (DSGVO).
+  </p>
 
-    <h3>6. Keine Werbung, kein Tracking, keine Analytics</h3>
-    <p>
-      Die App verwendet keine Werbung, kein Tracking und keine Analytics-Dienste.
-    </p>
+  <h3>2. Verarbeitete Daten</h3>
+  <p>Je nach Nutzung können folgende Daten verarbeitet werden:</p>
+  <ul>
+    <li>Produkt- und Inventardaten, die vom Nutzer eingegeben werden</li>
+    <li>Selbst erstellte Produktfotos</li>
+    <li>App-Einstellungen</li>
+  </ul>
+  <p>
+    Es werden keine Benutzerkonten erstellt und keine E-Mail-Adressen der Nutzer erfasst.
+  </p>
 
-    <h3>7. Weitergabe von Daten</h3>
-    <p>
-      Der Entwickler gibt keine personenbezogenen Daten an Dritte weiter.
-      App-Daten werden ausschliesslich in Ihrer iCloud gespeichert.
-    </p>
+  <h3>3. Speicherung über iCloud (CloudKit)</h3>
+  <p>
+    Alle eingegebenen Daten werden ausschliesslich im persönlichen iCloud-Konto 
+    des Nutzers gespeichert (Apple CloudKit).
+    Der Entwickler hat keinen Zugriff auf diese Daten.
+  </p>
 
-    <h3>8. Speicherdauer</h3>
-    <p>
-      Die Daten bleiben gespeichert, bis Sie sie in der App oder in iCloud löschen.
-    </p>
+  <h3>4. Kamera und Barcode-Scan</h3>
+  <p>
+    Die App verwendet die Kamera ausschliesslich zum Scannen von Barcodes 
+    sowie optional zum Fotografieren von Produkten.
+    Bilder werden nur lokal verarbeitet und – sofern vom Nutzer gespeichert – 
+    im persönlichen iCloud-Speicher abgelegt.
+  </p>
 
-    <h3>9. Ihre Rechte</h3>
-    <p>
-      Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer Daten.
-      Kontakt: <a href="mailto:[[EMAIL]]">[[EMAIL]]</a>
-    </p>
+  <h3>5. Abruf von Produktinformationen (Open Food Facts)</h3>
+  <p>
+    Beim Scannen eines Barcodes können Produktinformationen über die öffentliche 
+    Datenbank von Open Food Facts abgerufen werden.
+  </p>
+  <p>
+    Dabei wird technisch eine Anfrage an deren Server übermittelt, was 
+    systembedingt die IP-Adresse des Geräts beinhalten kann.
+  </p>
+  <p>
+    Weitere Informationen:
+    <a href="https://wiki.openfoodfacts.org/Project:Privacy_policy" target="_blank">
+      Datenschutz bei Open Food Facts
+    </a>
+  </p>
 
-    <h3>10. Open-Data Hinweis (Attribution)</h3>
-    <p>
-      Produktdaten stammen (sofern verfügbar) aus Open Food Facts. Die Datenbank steht unter der Open Database License (ODbL),
-      mit Bedingungen wie <strong>Attribution</strong> und ggf. <strong>Share-Alike</strong>, falls Daten mit anderen Datenbanken kombiniert werden.
-      Details siehe Open Food Facts Hinweise zu Daten-Wiederverwendung.
-    </p>
+  <h3>6. Keine Werbung, kein Tracking</h3>
+  <p>
+    Die App verwendet keine Werbung, kein Tracking und keine Analyse-Dienste.
+  </p>
 
-  </section>
+  <h3>7. Weitergabe von Daten</h3>
+  <p>
+    Es erfolgt keine Weitergabe personenbezogener Daten durch den Entwickler.
+  </p>
 
-  <footer>
-    <p>
-      Tipp: Verlinke diese Seite in der App unter „Einstellungen → Datenschutz“ und nutze die gleiche URL im App Store Connect.
-    </p>
-  </footer>
+  <h3>8. Speicherdauer</h3>
+  <p>
+    Daten bleiben gespeichert, bis sie vom Nutzer gelöscht werden.
+  </p>
+
+  <h3>9. Rechte der betroffenen Personen</h3>
+  <p>
+    Nutzer haben das Recht auf Auskunft, Berichtigung, Löschung 
+    sowie Einschränkung der Verarbeitung.
+    Kontakt: 
+    <a href="mailto:jennech@mac.com">jennech@mac.com</a>
+  </p>
+
+  <h3>10. Datenquelle</h3>
+  <p>
+    Produktdaten (sofern verfügbar) stammen von Open Food Facts 
+    (Open Database License – ODbL).
+  </p>
+
+</section>
+
+<footer>
+  Diese Seite dient als offizielle Impressums- und Datenschutzerklärung für die App „FrostBox“.
+</footer>
+
 </body>
 </html>
