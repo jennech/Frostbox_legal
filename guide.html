@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FrostBox – Anleitung</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      max-width: 980px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+      line-height: 1.6;
+      color: #111;
+    }
+    header { margin-bottom: 30px; }
+    h1 { font-size: 28px; margin-bottom: 6px; }
+    h2 { margin-top: 34px; font-size: 20px; }
+    h3 { margin-top: 18px; font-size: 16px; }
+    .card {
+      background: #fafafa;
+      border: 1px solid #eaeaea;
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 10px;
+    }
+    .nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 12px 0 0;
+      font-size: 14px;
+    }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 999px; background: #f0f0f0; font-size: 12px; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    figure { margin: 16px 0; }
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid #eaeaea;
+      background: #fff;
+      display: block;
+    }
+    figcaption { font-size: 13px; color: #555; margin-top: 6px; }
+    ul { padding-left: 20px; }
+    code { background: #f4f4f4; padding: 1px 6px; border-radius: 6px; }
+    footer { margin-top: 40px; font-size: 13px; color: #555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FrostBox Anleitung</h1>
+    <p>Stand: Februar 2026</p>
+    <nav class="nav">
+      <a href="index.html">Impressum & Datenschutz</a>
+      <a href="guide.html"><strong>Anleitung</strong></a>
+      <a href="tester.html">Tester‑Guide</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>1. Überblick</h2>
+    <div class="card">
+      <p>FrostBox hilft dir, Tiefkühler und andere Lagerorte zu verwalten: Artikel erfassen, nach Fächern ordnen, Barcodes scannen und Bestände im Blick behalten. Die App ist für Familien‑Haushalte optimiert und kann über iCloud (CloudKit) geteilt werden.</p>
+      <p class="tag">Tipp</p> Wenn du die App an Freunde oder Verwandte weitergibst, können sie ihren eigenen Haushalt einrichten – unabhängig von deinem Bestand.
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Erste Schritte</h2>
+    <ol>
+      <li>App öffnen und den ersten Haushalt anlegen (oder automatisch anlegen lassen).</li>
+      <li>Mindestens einen Lagerort erstellen (z.B. „Tiefkühler Keller“).</li>
+      <li>Fächer/Schubladen pro Lagerort definieren.</li>
+    </ol>
+
+    <figure>
+      <img src="assets/setup-overview.png" alt="Startansicht und erste Schritte">
+      <figcaption>Platzhalter: Startansicht und erster Setup‑Schritt (Screenshot einfügen).</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>3. Lagerorte & Fächer</h2>
+    <p>Ein Lagerort entspricht einem Tiefkühler, Kühlschrank oder einer Speisekammer. Fächer sind die Unterteilungen darin.</p>
+    <ul>
+      <li>Lagerorte lassen sich umbenennen oder löschen (wenn nicht genutzt).</li>
+      <li>Fächer können hinzugefügt, umbenannt oder gelöscht werden.</li>
+      <li>Bei Umbenennung werden bestehende Artikel angepasst.</li>
+    </ul>
+
+    <figure>
+      <img src="assets/locations-edit.png" alt="Lagerort bearbeiten und Fächer verwalten">
+      <figcaption>Platzhalter: Lagerort bearbeiten mit Fächerliste (Screenshot einfügen).</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>4. QR‑Fachcodes (zum Scannen)</h2>
+    <p>Für jedes Fach kann ein QR‑Code erstellt werden. So kannst du Fächer schnell scannen, statt sie manuell auszuwählen.</p>
+    <ul>
+      <li>In den Lagerorten: QR‑Export öffnen.</li>
+      <li>Größe der QR‑Codes wählen.</li>
+      <li>PDF exportieren und ausdrucken.</li>
+    </ul>
+
+    <figure>
+      <img src="assets/qr-export.png" alt="QR‑Export und PDF">
+      <figcaption>Platzhalter: QR‑Export mit PDF‑Vorschau (Screenshot einfügen).</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>5. Artikel einlagern</h2>
+    <h3>Manuell</h3>
+    <ul>
+      <li>Neuer Artikel → Name, Kategorie, Menge.</li>
+      <li>Lagerort und Fach wählen (Fach ist Pflicht).</li>
+      <li>Optional: Foto, Barcode, MHD.</li>
+    </ul>
+
+    <h3>Mit Barcode</h3>
+    <ul>
+      <li>Barcode scannen → Produktdaten von Open Food Facts (falls verfügbar).</li>
+      <li>Automatische Kategorie‑Vorschläge möglich.</li>
+    </ul>
+
+    <figure>
+      <img src="assets/add-item.png" alt="Artikel anlegen mit Barcode">
+      <figcaption>Platzhalter: Artikel anlegen mit Barcode‑Scan (Screenshot einfügen).</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>6. Schnellscan (für viele Artikel)</h2>
+    <p>Der Schnellscan ist ideal nach dem Einkauf: erst Produkt scannen, dann Fach scannen – Reihenfolge egal.</p>
+    <ul>
+      <li>Die App zeigt an, was bereits erkannt wurde (Produkt/Fach).</li>
+      <li>Nach erfolgreicher Zuordnung wird automatisch gespeichert.</li>
+      <li>Ein akustisches Feedback signalisiert Erfolg.</li>
+    </ul>
+
+    <figure>
+      <img src="assets/quickscan.png" alt="Schnellscan‑Bildschirm">
+      <figcaption>Platzhalter: Schnellscan‑Bildschirm mit Statusanzeigen (Screenshot einfügen).</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>7. Ausbuchen (Entnahme)</h2>
+    <p>In der Entnahme kannst du per Barcode suchen oder aus Vorschlägen auswählen.</p>
+    <ul>
+      <li>Barcode scannen → passende Artikel werden angezeigt.</li>
+      <li>Bei mehreren Treffern auswählen.</li>
+      <li>Standardmäßig wird eine volle Packung vorgeschlagen.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. MHD (Mindesthaltbarkeit)</h2>
+    <p>Wenn MHD automatisch aktiv ist, schlägt die App je nach Kategorie ein sinnvolles Datum vor. Du kannst es jederzeit manuell ändern.</p>
+  </section>
+
+  <section>
+    <h2>9. Kategorien & Filter</h2>
+    <ul>
+      <li>Eigene Kategorien ergänzen und verwalten.</li>
+      <li>Filter nach Lagerort, Fach, Kategorie und Haltbarkeit.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>10. Fotos</h2>
+    <ul>
+      <li>Optional Foto aufnehmen oder aus der Mediathek wählen.</li>
+      <li>Für schnelle Anzeige nutzt die App Vorschaubilder.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>11. iCloud‑Sync & Teilen mit Familie</h2>
+    <p>FrostBox speichert Daten im iCloud‑Account des Nutzers. Für einen gemeinsamen Haushalt kannst du über die Teilen‑Funktion andere Mitglieder einladen.</p>
+    <ul>
+      <li>Alle Mitglieder müssen mit iCloud angemeldet sein.</li>
+      <li>Einladungen werden über iOS geteilt.</li>
+      <li>Nach Annahme sehen alle den gleichen Haushalt.</li>
+    </ul>
+
+    <figure>
+      <img src="assets/share-household.png" alt="Haushalt teilen">
+      <figcaption>Platzhalter: Teilen‑Dialog für den Haushalt (Screenshot einfügen).</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>12. Häufige Fragen</h2>
+    <h3>Warum sehe ich keine Kategorie?</h3>
+    <p>Wenn Open Food Facts keine klare Kategorie liefert oder die Kategorie nicht existiert, kannst du sie manuell wählen oder anlegen.</p>
+
+    <h3>Wo werden Daten gespeichert?</h3>
+    <p>In iCloud (CloudKit). Der Entwickler hat keinen Zugriff.</p>
+
+    <h3>Kann ich ohne Barcode arbeiten?</h3>
+    <p>Ja, alle Funktionen sind auch manuell verfügbar.</p>
+  </section>
+
+  <footer>
+    Produktdaten teilweise von Open Food Facts (ODbL).
+  </footer>
+</body>
+</html>

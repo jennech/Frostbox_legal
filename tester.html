@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FrostBox – Tester‑Guide</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      max-width: 980px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+      line-height: 1.6;
+      color: #111;
+    }
+    header { margin-bottom: 30px; }
+    h1 { font-size: 28px; margin-bottom: 6px; }
+    h2 { margin-top: 34px; font-size: 20px; }
+    h3 { margin-top: 18px; font-size: 16px; }
+    .card {
+      background: #fafafa;
+      border: 1px solid #eaeaea;
+      border-radius: 14px;
+      padding: 18px;
+      margin-top: 10px;
+    }
+    .nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 12px 0 0;
+      font-size: 14px;
+    }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 999px; background: #f0f0f0; font-size: 12px; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    figure { margin: 16px 0; }
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      border: 1px solid #eaeaea;
+      background: #fff;
+      display: block;
+    }
+    figcaption { font-size: 13px; color: #555; margin-top: 6px; }
+    ul { padding-left: 20px; }
+    code { background: #f4f4f4; padding: 1px 6px; border-radius: 6px; }
+    footer { margin-top: 40px; font-size: 13px; color: #555; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>FrostBox Tester‑Guide</h1>
+    <p>Stand: Februar 2026</p>
+    <nav class="nav">
+      <a href="index.html">Impressum & Datenschutz</a>
+      <a href="guide.html">Anleitung</a>
+      <a href="tester.html"><strong>Tester‑Guide</strong></a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>1. Ziel des Tests</h2>
+    <div class="card">
+      <p>Wir testen Stabilität, Bedienbarkeit und iCloud‑Sync (privat & geteilt). Bitte notiere, was unklar ist oder nicht zuverlässig funktioniert.</p>
+      <p class="tag">Wichtig</p> Bitte Testdaten verwenden (keine echten sensiblen Daten).</div>
+  </section>
+
+  <section>
+    <h2>2. Voraussetzungen</h2>
+    <ul>
+      <li>iPhone mit aktueller iOS‑Version</li>
+      <li>iCloud angemeldet und iCloud Drive aktiv</li>
+      <li>TestFlight installiert (falls erforderlich)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Setup‑Checkliste</h2>
+    <ol>
+      <li>App installieren und starten</li>
+      <li>Kamera‑Zugriff erlauben (für Barcode/Fotos)</li>
+      <li>Ersten Lagerort anlegen + Fächer definieren</li>
+      <li>Testartikel hinzufügen</li>
+    </ol>
+
+    <figure>
+      <img src="assets/tester-setup.png" alt="Tester Setup">
+      <figcaption>Platzhalter: Setup‑Schritte (Screenshot einfügen).</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>4. Testfälle (bitte durchgehen)</h2>
+    <h3>A) Artikel erfassen</h3>
+    <ul>
+      <li>Manuell erfassen (Name, Menge, Fach)</li>
+      <li>Barcode scannen → Produktdaten prüfen</li>
+      <li>Foto aufnehmen und im Detail ansehen</li>
+    </ul>
+
+    <h3>B) Schnellscan</h3>
+    <ul>
+      <li>Produkt scannen → Fach scannen</li>
+      <li>Fach scannen → Produkt scannen</li>
+      <li>Mehrere Produkte nacheinander</li>
+    </ul>
+
+    <h3>C) Ausbuchen</h3>
+    <ul>
+      <li>Barcode scannen und Entnahme durchführen</li>
+      <li>Mehrere Treffer auswählen</li>
+    </ul>
+
+    <h3>D) Kategorien & Filter</h3>
+    <ul>
+      <li>Neue Kategorie anlegen</li>
+      <li>Filter nach Lagerort/Fach/Kategorie</li>
+    </ul>
+
+    <h3>E) iCloud Sync (privat)</h3>
+    <ul>
+      <li>App schließen und erneut öffnen → Daten da?</li>
+      <li>Neustart des iPhones → Daten da?</li>
+    </ul>
+
+    <h3>F) Teilen (gemeinsamer Haushalt)</h3>
+    <ul>
+      <li>Haushalt teilen und Einladung annehmen</li>
+      <li>Änderung auf Gerät A → erscheint auf Gerät B?</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Feedback geben</h2>
+    <div class="card">
+      <p>Bitte sende:</p>
+      <ul>
+        <li>Kurze Beschreibung (was wolltest du tun?)</li>
+        <li>Was ist passiert?</li>
+        <li>Screenshot oder Bildschirmaufnahme</li>
+      </ul>
+      <p>Kontakt: <a href="mailto:jennech@mac.com">jennech@mac.com</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>6. Bekannte Punkte (falls zutreffend)</h2>
+    <ul>
+      <li>Wenn etwas nicht reagiert: App schließen und erneut öffnen.</li>
+      <li>Barcode‑Scan funktioniert besser bei gutem Licht.</li>
+    </ul>
+  </section>
+
+  <footer>
+    Produktdaten teilweise von Open Food Facts (ODbL).
+  </footer>
+</body>
+</html>
